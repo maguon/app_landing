@@ -28,11 +28,11 @@ const SectionWrapper = ({ title, description, showBtn, mockupImg, banner, revers
             <div style={{flex: 1,flexDirection:"row",display:"flex",justifyContent:"space-between"}}>
               <BtnAndroid 
                 assetUrl={assets.logo}
-                link="https://www.pgyer.com/Dmxf"
+                link="https://admin.yepin.net.cn/"
               />
               <BtnIOS 
                 assetUrl={assets.logo}
-                link="https://apps.apple.com/cn/app/%E4%B8%9A%E8%81%98/id1576659323"
+                link="http://company.yepin.net.cn"
               />
             </div>
           )}

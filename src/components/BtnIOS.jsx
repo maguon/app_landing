@@ -12,8 +12,8 @@ const BtnIOS = ({ assetUrl, link }) => {
         <AiFillApple size="3rem" style={{color:"#ffffff"}}/>
       </div>
       <div className="flex flex-col justify-start ml-4">
-        <p className={`${styles.btnText} font-normal text-xs`}>iPhone</p>
-        <p className={`${styles.btnText} font-bold text-sm`}>App Store</p>
+        <p className={`${styles.btnText} font-normal text-xs`}>企业入口</p>
+        <p className={`${styles.btnText} font-bold text-sm`}>点击进入</p>
       </div>
     </div>
   )

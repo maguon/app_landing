@@ -13,8 +13,8 @@ const BtnAndroid = ({ assetUrl, link }) => {
         <AiFillAndroid size="3rem" style={{color:"#ffffff"}}/>
       </div>
       <div className="flex flex-col justify-start ml-4">
-        <p className={`${styles.btnText} font-normal text-xs`}>Android</p>
-        <p className={`${styles.btnText} font-bold text-sm`}>本地下载</p>
+        <p className={`${styles.btnText} font-normal text-xs`}>Admin</p>
+        <p className={`${styles.btnText} font-bold text-sm`}>直播管理</p>
       </div>
     </div>
   )
