@@ -28,7 +28,7 @@ const SectionWrapper = ({ title, description, showBtn, mockupImg, banner, revers
             <div style={{flex: 1,flexDirection:"row",display:"flex",justifyContent:"space-between"}}>
               <BtnAndroid 
                 assetUrl={assets.logo}
-                link="https://admin.yepin.net.cn/"
+                link="https://admin.yepin.co:88/"
               />
               <BtnIOS 
                 assetUrl={assets.logo}
