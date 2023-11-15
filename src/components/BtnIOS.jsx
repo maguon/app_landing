@@ -16,7 +16,7 @@ const BtnIOS = ({ assetUrl, link }) => {
       </div>
       <div className="flex flex-col justify-start ml-4">
         <p className={`${styles.btnText} font-normal text-xs`} style={{textAlign:"center"}}>IOS</p>
-        <p className={`${styles.btnText} font-bold text-sm`}>点击下载</p>
+        <p className={`${styles.btnText} font-bold text-sm`}>下载</p>
       </div>
     </div>
   )
