@@ -12,6 +12,7 @@ import banner from "./banner.svg";
 import banner02 from "./banner02.svg";
 import banner03 from "./banner03.svg";
 import banner04 from "./banner04.svg";
+import arrow from './arrow.png'
 export default {
   homeHero,
   homeCards,
@@ -23,6 +24,7 @@ export default {
   scene,
   mockup,
   logo,
+  arrow,
   banner,
   banner02,
   banner03,

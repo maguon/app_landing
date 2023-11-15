@@ -6,14 +6,17 @@ const BtnIOS = ({ assetUrl, link }) => {
   return (
     <div 
       className={styles.btnBlack}
-      onClick={() => window.open(link, "_blank")}
+      onClick={() => {
+        alert('暂不支持IOS系统');
+        //window.open(link, "_blank")
+      }}
     >
       <div>
         <AiFillApple size="3rem" style={{color:"#ffffff"}}/>
       </div>
       <div className="flex flex-col justify-start ml-4">
-        <p className={`${styles.btnText} font-normal text-xs`}>企业入口</p>
-        <p className={`${styles.btnText} font-bold text-sm`}>点击进入</p>
+        <p className={`${styles.btnText} font-normal text-xs`} style={{textAlign:"center"}}>IOS</p>
+        <p className={`${styles.btnText} font-bold text-sm`}>点击下载</p>
       </div>
     </div>
   )

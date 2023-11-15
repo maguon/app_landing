@@ -6,6 +6,19 @@ import styles from './styles/Global';
 const App = () => {
   return (
     <>
+      <div id="guideDiv" style={{display:"none",position:"absolute",top:0,width:"100%",height:"100%",backgroundColor:"rgba(3, 29, 26, 0.7)",zIndex:2 }} >
+          <div style={{backgroundColor:"#000",border:"2px solid #fff ",borderBottomRightRadius:"28px",
+              color:"#fff",fontSize:"22px",height:"28px",textAlign:"center",width:"28px",paddingBottom:"2px",
+              marginLeft:0,lineHeight: "12px" }}>
+                <button onClick={()=>{document.getElementById("guideDiv").style.display="none"}}>×</button>
+          </div>
+          <div style={{display:"flex",justifyContent:"right",marginTop:"-20px"}}><img style={{paddingRight:"20px"}} src={assets.arrow} /></div>
+          <div style={{width:"100%",textAlign:"center",color:"#fff"}}>
+              <p >不能正常下载</p>
+              <p style={{fontSize:"20px"}}>由于微信的限制，请点击右上角</p>
+              <div style={{fontSize:"20px"}}>请选择<span style={{color:"#D76632"}}>"在浏览器中打开"</span></div>
+          </div>
+      </div>
       <SectionWrapper 
         title="业聘,您身边的招聘专家!"
         description="好工作尽在业聘,打造您的职场进阶之路!"
@@ -37,7 +50,7 @@ const App = () => {
       <Download />
 
       <div className="px-4 py-12 justify-center items-center flex-col text-center ">
-        <p className={`${styles.pText} ${styles.whiteText}`}>
+        <div className={`${styles.pText} ${styles.whiteText}`}>
           <div style={{marginBottom:"-2rem",color:"#486AFF"}}>
             <p>
             辽宁业聘科技有限公司 | 辽ICP备2021002952号-1
@@ -49,7 +62,7 @@ const App = () => {
             地址：辽宁省大连保税区东北四街新东方·青年汇1层03号
             </p>
           </div>
-        </p>
+        </div>
       </div>
     </>
   );

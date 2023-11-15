@@ -32,7 +32,7 @@ const SectionWrapper = ({ title, description, showBtn, mockupImg, banner, revers
               />
               <BtnIOS 
                 assetUrl={assets.logo}
-                link="http://company.yepin.net.cn"
+                link="http://baidu.com"
               />
             </div>
           )}
