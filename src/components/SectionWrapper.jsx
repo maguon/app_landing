@@ -5,6 +5,8 @@ import assets from '../assets';
 import Button from './Button';
 import BtnAndroid from './BtnAndroid';
 import BtnIOS from './BtnIOS';
+import BtnWin from './BtnWin';
+import BtnMac from './BtnMac';
 
 const SectionWrapper = ({ title, description, showBtn, mockupImg, banner, reverse }) => {
   return (
@@ -25,16 +27,28 @@ const SectionWrapper = ({ title, description, showBtn, mockupImg, banner, revers
           ${reverse ? styles.blackText : styles.whiteText}
           ${styles.descriptionText}`}>{description}</p>
           {showBtn && (
-            <div style={{flex: 1,flexDirection:"row",display:"flex",justifyContent:"space-between"}}>
-              <BtnAndroid 
-                assetUrl={assets.logo}
-                link="http://admin.yepin.co:88/"
-              />
-              <BtnIOS 
-                assetUrl={assets.logo}
-                link="http://baidu.com"
-              />
-            </div>
+            <>
+              <div style={{flex: 1,flexDirection:"row",display:"flex",justifyContent:"space-between"}}>
+                <BtnAndroid 
+                  assetUrl={assets.logo}
+                  link="http://admin.yepin.co:88/"
+                />
+                <BtnIOS 
+                  assetUrl={assets.logo}
+                  link="http://baidu.com"
+                />
+              </div>
+              <div style={{flex: 1,flexDirection:"row",display:"flex",justifyContent:"space-between",marginTop:32}}>
+                <BtnWin 
+                  assetUrl={assets.logo}
+                  link="http://admin.yepin.co:88/"
+                />
+                <BtnMac 
+                  assetUrl={assets.logo}
+                  link="http://baidu.com"
+                />
+              </div>
+            </>
           )}
         </div>
         <div

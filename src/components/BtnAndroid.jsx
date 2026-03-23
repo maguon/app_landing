@@ -7,6 +7,7 @@ const BtnAndroid = ({ assetUrl, link }) => {
   return (
     <div 
       className={styles.btnBlack}
+      style={{minWidth:'30%'}}
       onClick={async() => {
       
         const  wechatFlag = checkWechatRequest()
@@ -27,9 +28,9 @@ const BtnAndroid = ({ assetUrl, link }) => {
       <div>
         <AiFillAndroid size="3rem" style={{color:"#ffffff"}}/>
       </div>
-      <div className="flex flex-col justify-start ml-4">
-        <p className={`${styles.btnText} font-normal text-xs`} style={{textAlign:"center"}}>Android</p>
-        <p className={`${styles.btnText} font-bold text-sm`}>下载</p>
+      <div className="flex flex-col justify-center ml-4"  style={{flexGrow:1}}>
+        <div className={`${styles.btnText} font-normal text-xs`} style={{textAlign:"center"}}>Android</div>
+        <div className={`${styles.btnText} font-bold text-sm`}  style={{textAlign:"center"}}>下载</div>
       </div>
     </div>
   )
