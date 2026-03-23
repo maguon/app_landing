@@ -11,7 +11,7 @@ export const checkWechatRequest = () =>{
 }
 
 export const getAppLink = (deviceType) => {
-    const url = `http://api.yepin.co:88/api/public/app?deviceType=${deviceType}&pageNumber=1&pageSize=1`
+    const url = `http://api.yepin.net.cn/api/public/app?deviceType=${deviceType}&pageNumber=1&pageSize=1`
     return fetch( url, {
         method: 'GET'
     }).then((response) => {
