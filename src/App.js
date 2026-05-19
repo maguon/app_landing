@@ -2,6 +2,7 @@
 import { Download, Features, SectionWrapper } from './components';
 import assets from './assets';
 import styles from './styles/Global';
+import BtnWechat from './components/BtnWechat';
 
 const App = () => {
   return (
@@ -48,6 +49,9 @@ const App = () => {
         
       />
       <Download />
+      <div style={{position:"fixed",bottom:"30px",left:"30px"}}>
+        <BtnWechat />
+      </div>
 
       <div className="px-4 py-12 justify-center items-center flex-col text-center ">
         <div className={`${styles.pText} ${styles.whiteText}`}>
